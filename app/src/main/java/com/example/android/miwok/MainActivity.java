@@ -24,6 +24,8 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     TextView numButton;
     TextView colorsButton;
+    TextView familyButton;
+    TextView phrasesButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +37,9 @@ public class MainActivity extends AppCompatActivity {
 
         numButton = (TextView) findViewById(R.id.numbers);
         colorsButton = (TextView)findViewById(R.id.colors);
+        familyButton = (TextView)findViewById(R.id.family);
+        phrasesButton = (TextView)findViewById(R.id.phrases);
+
 
         numButton.setOnClickListener(new View.OnClickListener() {
             @Override public void onClick(View v) {
@@ -48,6 +53,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ColorsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        familyButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, FamilyActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        phrasesButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, PhrasesActivity.class);
                 startActivity(intent);
             }
         });
