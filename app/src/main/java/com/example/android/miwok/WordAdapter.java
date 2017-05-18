@@ -12,9 +12,9 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 
-public class WordAdapter extends ArrayAdapter<Words> {
+public class WordAdapter extends ArrayAdapter<Word> {
 
-    public WordAdapter(@NonNull Context context, @NonNull ArrayList<Words> objects) {
+    public WordAdapter(@NonNull Context context, @NonNull ArrayList<Word> objects) {
         super(context, 0, objects);
     }
 
@@ -28,7 +28,7 @@ public class WordAdapter extends ArrayAdapter<Words> {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.list_item, parent, false);
         }
-        Words currentWord = getItem(position);
+        Word currentWord = getItem(position);
 
         TextView enLan = (TextView) listItemView.findViewById(R.id.enLan);
         TextView miLan = (TextView) listItemView.findViewById(R.id.miLan);

@@ -1,11 +1,11 @@
 package com.example.android.miwok;
 
-public class Words {
+public class Word {
 
     private String mEnglishWord;
     private String mMiWokWord;
 
-    public Words(String englishWord, String miWokWord) {
+    public Word(String englishWord, String miWokWord) {
         mEnglishWord = englishWord;
         mMiWokWord = miWokWord;
     }
