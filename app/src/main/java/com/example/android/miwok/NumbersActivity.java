@@ -21,9 +21,7 @@ public class NumbersActivity extends AppCompatActivity {
 
 
         WordAdapter itemsAdapter = new WordAdapter(this, words);
-
         ListView listView = (ListView) findViewById(R.id.list);
-
         listView.setAdapter(itemsAdapter);
 
 
