@@ -18,18 +18,23 @@ package com.example.android.miwok;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    final static String TAG = "Main Activity";
     TextView numButton;
     TextView colorsButton;
     TextView familyButton;
     TextView phrasesButton;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.v(TAG , "onCreate");
 
 
         // Set the content of the activity to use the activity_main.xml layout file
@@ -74,6 +79,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+
     }
+
 
 }
